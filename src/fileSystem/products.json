@@ -1,0 +1,111 @@
+[
+  {
+    "id": 1,
+    "title": "iPhone 15 pro",
+    "description": "Apple smartphone with A14 Bionic chip and 5G capability",
+    "code": "AAPL1239",
+    "price": 1000.99,
+    "status": true,
+    "stock": 50,
+    "category": "Smartphone"
+  },
+  {
+    "id": 2,
+    "title": "MacBook Pro",
+    "description": "Apple laptop",
+    "code": "AAPL5678",
+    "price": 1299.99,
+    "status": true,
+    "stock": 30,
+    "category": "Laptop",
+    "thumbnails": []
+  },
+  {
+    "id": 3,
+    "title": "iPad Pro",
+    "description": "Apple tablet",
+    "code": "AAPL9101",
+    "price": 999.99,
+    "status": true,
+    "stock": 40,
+    "category": "Tablet",
+    "thumbnails": []
+  },
+  {
+    "id": 4,
+    "title": "Apple Watch Series 6",
+    "description": "Apple smartwatch",
+    "code": "AAPL1121",
+    "price": 399.99,
+    "status": true,
+    "stock": 60,
+    "category": "Smartwatch",
+    "thumbnails": []
+  },
+  {
+    "id": 5,
+    "title": "AirPods Pro",
+    "description": "Apple wireless earbuds",
+    "code": "AAPL3141",
+    "price": 249.99,
+    "status": true,
+    "stock": 70,
+    "category": "Earbuds",
+    "thumbnails": []
+  },
+  {
+    "id": 6,
+    "title": "iMac",
+    "description": "Apple desktop computer",
+    "code": "AAPL5161",
+    "price": 1799.99,
+    "status": true,
+    "stock": 20,
+    "category": "Desktop",
+    "thumbnails": []
+  },
+  {
+    "id": 7,
+    "title": "Mac Mini",
+    "description": "Apple compact desktop",
+    "code": "AAPL7181",
+    "price": 699.99,
+    "status": true,
+    "stock": 25,
+    "category": "Desktop",
+    "thumbnails": []
+  },
+  {
+    "id": 8,
+    "title": "Apple TV 4K",
+    "description": "Apple streaming device",
+    "code": "AAPL9201",
+    "price": 179.99,
+    "status": true,
+    "stock": 80,
+    "category": "Streaming Device",
+    "thumbnails": []
+  },
+  {
+    "id": 9,
+    "title": "HomePod mini",
+    "description": "Apple smart speaker",
+    "code": "AAPL2234",
+    "price": 99.99,
+    "status": true,
+    "stock": 90,
+    "category": "Smart Speaker",
+    "thumbnails": []
+  },
+  {
+    "id": 10,
+    "title": "Magic Keyboard",
+    "description": "Apple wireless keyboard",
+    "code": "AAPL4256",
+    "price": 99.99,
+    "status": true,
+    "stock": 100,
+    "category": "Keyboard",
+    "thumbnails": []
+  }
+]
