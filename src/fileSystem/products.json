@@ -1,15 +1,6 @@
 [
   {
-    "id": 1,
-    "title": "iPhone 15 pro",
-    "description": "Apple smartphone with A14 Bionic chip and 5G capability",
-    "code": "AAPL1239",
-    "price": 1000.99,
-    "status": true,
-    "stock": 50,
-    "category": "Smartphone"
-  },
-  {
+    "_id": "66d489e4b9eadc3d669e0f2e",
     "id": 2,
     "title": "MacBook Pro",
     "description": "Apple laptop",
@@ -21,6 +12,7 @@
     "thumbnails": []
   },
   {
+    "_id": "66d489e4b9eadc3d669e0f2f",
     "id": 3,
     "title": "iPad Pro",
     "description": "Apple tablet",
@@ -32,6 +24,7 @@
     "thumbnails": []
   },
   {
+    "_id": "66d489e4b9eadc3d669e0f30",
     "id": 4,
     "title": "Apple Watch Series 6",
     "description": "Apple smartwatch",
@@ -43,6 +36,7 @@
     "thumbnails": []
   },
   {
+    "_id": "66d489e4b9eadc3d669e0f31",
     "id": 5,
     "title": "AirPods Pro",
     "description": "Apple wireless earbuds",
@@ -54,6 +48,7 @@
     "thumbnails": []
   },
   {
+    "_id": "66d489e4b9eadc3d669e0f32",
     "id": 6,
     "title": "iMac",
     "description": "Apple desktop computer",
@@ -65,6 +60,7 @@
     "thumbnails": []
   },
   {
+    "_id": "66d489e4b9eadc3d669e0f33",
     "id": 7,
     "title": "Mac Mini",
     "description": "Apple compact desktop",
@@ -76,6 +72,7 @@
     "thumbnails": []
   },
   {
+    "_id": "66d489e4b9eadc3d669e0f34",
     "id": 8,
     "title": "Apple TV 4K",
     "description": "Apple streaming device",
@@ -87,6 +84,7 @@
     "thumbnails": []
   },
   {
+    "_id": "66d489e4b9eadc3d669e0f35",
     "id": 9,
     "title": "HomePod mini",
     "description": "Apple smart speaker",
@@ -98,6 +96,7 @@
     "thumbnails": []
   },
   {
+    "_id": "66d489e4b9eadc3d669e0f36",
     "id": 10,
     "title": "Magic Keyboard",
     "description": "Apple wireless keyboard",

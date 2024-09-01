@@ -3,7 +3,8 @@ import routerCarts from "./routes/carts.router.js";
 import routerProducts from "./routes/products.router.js";
 import routerViews from "./routes/views.router.js";
 import { engine } from "express-handlebars";
-import { Server } from "socket.io";
+import "./database.js";
+
 
 const app = express();
 const port = 8080;
@@ -21,6 +22,7 @@ app.set("views", "./src/views");
 //routes
 app.use("/api/carts", routerCarts);
 app.use("/api/products", routerProducts);
+
 
 //routes views
 app.use("/", routerViews);

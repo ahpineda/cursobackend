@@ -1,4 +1,4 @@
-class Product {
+/*class Product {
     static currentId = 10;
   
     constructor(title, description, code, price, status, stock, category, thumbnails) {
@@ -30,5 +30,22 @@ class Product {
   }
 
   export default Product;
-  
+  */
+
+  import mongoose from "mongoose";
+  const productSchema = new mongoose.Schema({
+    id: Number,
+    title: String,
+    description: String,
+    code: Number,
+    price: Number,
+    status: String,
+    stock: Number,
+    category: String,
+    thumbnails: [String]
+  })
+
+  const ProductModel = new mongoose.model("products",productSchema);
+
+  export default ProductModel;
   
