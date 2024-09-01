@@ -1,11 +1,10 @@
-import { promises as fs } from 'fs';
 import ProductModel from "../model/product.model.js"
 
 class ProductService {
-    constructor(){
-        this.filePath='./src/fileSystem/products.json';
-    }
-           
+    // constructor(){
+    //     this.filePath='./src/fileSystem/products.json';
+    // }
+    static currentId = 11;       
     async getProducts(){
             // try {
             //   const data = await fs.readFile(this.filePath, 'utf8');
@@ -102,6 +101,7 @@ class ProductService {
         // }
         try {
             const product = new ProductModel({
+                id: ProductService.currentId++,
                 title : newProduct.title,
                 description : newProduct.description,
                 code: newProduct.code,

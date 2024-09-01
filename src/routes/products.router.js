@@ -21,8 +21,8 @@ router.post("/", async (req,res)=>{
         if (!title || !description || !code || price === undefined || stock === undefined || !category) {
             res.status(400).send({status:"error",message:"bad request", content:"all fields are required"});
         }
-        const newProduct = new Product(title, description, code, price, true, stock, category,thumbnails);
-        await productService.addProduct(newProduct);
+        // const newProduct = new Product(title, description, code, price, true, stock, category,thumbnails);
+        await productService.addProduct(req.body);
         res.send({status:"success",message:"product successfully added"});
     }catch (error){
         res.status(500).send({status:"error", message:"interal server error", content:error.message})

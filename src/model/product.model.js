@@ -37,7 +37,7 @@
     id: Number,
     title: String,
     description: String,
-    code: Number,
+    code: String,
     price: Number,
     status: String,
     stock: Number,

@@ -1,10 +1,9 @@
-import { promises as fs } from 'fs';
-import Cart from '../model/cart.model.js';
+import CartModel from '../model/cart.model.js';
 
 class CartService {
-    constructor(){
-        this.filePath='./src/fileSystem/carts.json';
-    }
+    // constructor(){
+    //     this.filePath='./src/fileSystem/carts.json';
+    // }
 
     async createCart(){
         try {
@@ -17,25 +16,41 @@ class CartService {
     }  
 
     async getCarts(){
+        // try{
+        //     const data = await fs.readFile(this.filePath, 'utf8');
+        //     return JSON.parse(data); 
+        // }catch (error){
+        //     throw error
+        // }
         try{
-            const data = await fs.readFile(this.filePath, 'utf8');
-            return JSON.parse(data); 
+            const data = await CartModel.find().lean();
+            return data;
         }catch (error){
-            throw error
+            throw error;
         }
     }
 
-    async getCart(cid){
-        try {
-            const carts= await this.getCarts();
-            const cart = carts.find(cart=>cart.id==cid)
-            if (cart){
-                return cart.products;
-            }else{
-                throw new Error ("Cart not found");
-            }          
-        } catch (error) {
-          throw error;
+    async getCart(idSearch){
+        // try {
+        //     const carts= await this.getCarts();
+        //     const cart = carts.find(cart=>cart.id==cid)
+        //     if (cart){
+        //         return cart.products;
+        //     }else{
+        //         throw new Error ("Cart not found");
+        //     }          
+        // } catch (error) {
+        //   throw error;
+        // }
+        try{
+            const result = await CartModel.find({id:idSearch})
+            if (result) {
+               return result.products
+            } else {
+                console.log("Product not found");
+            }
+        }catch (error){
+            throw error
         }
     }
 
