@@ -1,8 +1,6 @@
 import { Router } from "express";
 import ProductService from "../service/product.service.js";
 const router = Router();
-//DATA
-import Product from "../model/product.model.js" 
 
 const productService = new ProductService();
 

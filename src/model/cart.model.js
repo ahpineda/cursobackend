@@ -1,18 +1,23 @@
-/*class Cart {
-    static currentId = 1;
-  
-    constructor() {
-      this.id = Cart.currentId++;
-      this.products = [];
-
-    }
-}
-export default Cart;*/
 import mongoose, { Schema } from "mongoose";
 const cartSchema = new mongoose.Schema({
-  products: [{ type: Schema.Types.ObjectId, ref: 'ProductCart' }]
-})
+  products: [
+    {
+      product:{
+        type: mongoose.Schema.Types.ObjectId, ref: 'products',
+        required: true
+      },
+      quantity:{
+        type: Number,
+        required: true
+      }
+    }
+  ]
 
-const CartModel = new mongoose.model("cart",cartSchema);
+});
+cartSchema.pre('findOne', function () {
+  this.populate('products.product');
+});
+
+const CartModel = mongoose.model('carts', cartSchema);
 
 export default CartModel;
