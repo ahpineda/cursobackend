@@ -1,0 +1,28 @@
+<!-- Listado de Productos -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Todos los Productos</h2>
+        <div class="row">
+            {{#each products}}
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">{{this.title}}</h5>
+                            <p class="card-text">${{this.price}}</p>
+                            <a href="#" class="btn btn-primary">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+
+    <div class="pagination d-flex justify-content-center mt-4">
+        {{#if hasPrevPage}}
+            <a href="/products?page={{prevPage}}" class="btn btn-outline-primary mx-1">Anterior</a>
+        {{/if}}
+        <span class="btn btn-light mx-1">Página {{currentPage}} de {{totalPages}}</span>
+        {{#if hasNextPage}}
+            <a href="/products?page={{nextPage}}" class="btn btn-outline-primary mx-1">Siguiente</a>
+        {{/if}}
+    </div>
+</div>

@@ -68,6 +68,15 @@ class ProductService {
             throw error;
         }
     }
+
+    async getProductsPaginated(limit,page){
+        try{
+            const products = await ProductModel.paginate({},{limit:limit,page:page});
+            return products;
+        }catch (error){
+            throw error;
+        }
+    }
 }
 
 export default ProductService;

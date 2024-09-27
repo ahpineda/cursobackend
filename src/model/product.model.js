@@ -34,7 +34,7 @@
       type: [String],
     }
   })
-
+  productSchema.plugin(mongoosePaginate);
   const ProductModel = new mongoose.model("products",productSchema);
 
   export default ProductModel;
